@@ -62,17 +62,34 @@
         
              console.log(nonRepeating(array,n));
 
+             
 
+        //Getting the second maximum in an array
+
+
+        
              
-             
+        function SecondLargest (array, array_size)
+        {
             
+            if (array_size<2) {
+             console.log("array size should be greater than 2");
 
-     
+            }
+            else {
+                array.sort;
+                        console.log("The second largest element in the array is:", array[array_size-2]);
+                    
+                }
+               
+        }      
+        
 
-
-
-
-
+        var array = [12, 35, 1, 10, 34, 2];
+        var array_size = array.length;
+        SecondLargest(array,array_size);
+             
+    
 
     </script>
 
