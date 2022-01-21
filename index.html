@@ -5,6 +5,8 @@
 
 <body>
     <script>
+ 
+    // Leap year.
 
         var year = prompt("Enter a year to know if it is a leap year: ");
         if (year % 4 == 0) {
@@ -26,7 +28,7 @@
         }
 
 
-
+    // BMI. 
 
         var weight = prompt("Enter your weight in kg: ");
         var height = prompt("Enter your height in cm: ");
@@ -34,7 +36,38 @@
         var BMI = weight / (height * height);
         console.log("your BMI is", BMI);
 
+    // Non-repeated element of an array.
+     
+    function nonRepeating(array, n)
+         {
+             var i;
+             var j;
+             for ( i=0; i<n; i++) {
+                 for (j=0; j<n; j++) 
+                 if (i != j && array[i]==array[j])
+                    break;
+                 if (j==n)
+                 return array[i];
+                 
+             }
 
+           return -1;
+         }
+
+
+         //driver code
+
+             var array = [9,4,9,6,4]
+             var n = array.length;
+        
+             console.log(nonRepeating(array,n));
+
+
+             
+             
+            
+
+     
 
 
 
