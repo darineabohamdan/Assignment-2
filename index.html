@@ -6,7 +6,7 @@
 <body>
     <script>
 
-        var year = prompt("Enter a year to know if it is a leap year: ") ;
+        var year = prompt("Enter a year to know if it is a leap year: ");
         if (year % 4 == 0) {
             if (year % 100 == 0) {
                 if (year % 400 == 0) {
@@ -17,17 +17,22 @@
                 }
             }
             else {
-                    console.log('It is a leap year');
-                }
+                console.log('It is a leap year');
             }
+        }
 
         else {
             console.log('not a leap year.');
         }
 
-        
 
 
+
+        var weight = prompt("Enter your weight in kg: ");
+        var height = prompt("Enter your height in cm: ");
+        height = height / 100;
+        var BMI = weight / (height * height);
+        console.log("your BMI is", BMI);
 
 
 
